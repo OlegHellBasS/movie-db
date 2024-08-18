@@ -1,0 +1,24 @@
+@import "../../utility/styles/var.module";
+.header{
+  @include widthAndHeight(100%,12vh);
+  background: $color-black;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  flex: 0 0 auto;
+  z-index: 2;
+
+  .header__naw{
+    width: 30%;
+    display: flex;
+    column-gap: 12%;
+  }
+
+  .header__User_info{
+    column-gap: 5%;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
